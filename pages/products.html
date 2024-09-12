@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../client/styles/base.css">
+    <link rel="stylesheet" href="/client/styles/larger.css">
+    <title>Products Page</title>
+</head>
+<body>
+    <header id="header">
+
+    </header>
+    <main id="products-main">
+        <h1>Products</h1>
+        <section id="filters-section">
+        <button id="collapse" onclick="toggleFilters()">Close Filters</button>
+        <div id="filter-choices" class="">
+            <form id="filters">
+                <button id="clear" type="button">Clear Filters</button>
+                <input type="text" id="search-name" placeholder="Search by name">
+                <input type="number" id="min-price" placeholder="Min price">
+                <input type="number" id="max-price" placeholder="Max price">
+                <section id="categories"></section>
+                <button id="apply-filter" type="button">Apply Filters</button>
+            </form>
+        </div>
+        </section>
+        <section id="products-container"></section>
+    </main>
+    <footer id="footer">
+
+    </footer>
+    <script src="../client/scripts/products.js"></script>
+    <script src="../client/scripts/headerFooter.js"></script>
+</body>
+</html>

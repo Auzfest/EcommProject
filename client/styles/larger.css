@@ -1,0 +1,51 @@
+@media screen and (min-width: 768px) {
+
+#header h1{
+    padding-bottom: 5rem;
+}
+#profile_header {
+    position: absolute;
+    top: 1rem;
+    right: 15rem;
+    margin: auto;
+    width: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.25fr;
+}
+
+#cart img {
+    width: 5rem;
+    margin: 10px;
+}
+
+#userAccess img {
+    width: 5rem;
+    margin: 10px;
+}
+
+#products-main {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+    grid-template-rows: 90px 1fr;
+}
+
+#filters-section {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+#products-container {
+    grid-column: 2/3;
+    grid-row: 2/4;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+#filter-button {
+    display: none;
+}
+}

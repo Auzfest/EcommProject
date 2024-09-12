@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="../client/styles/base.css">
+    <link rel="stylesheet" href="/client/styles/larger.css">
+</head>
+<body>
+    <header id="header"></header>
+    <div id="account-details">
+        <div id="user-info">
+            <h2>Welcome, <span id="username"></span>!</h2>
+            <p id="account-info"></p>
+            <button id="edit-account-button">Edit Account</button>
+            <button id='past-button'>Past Carts</button>
+        </div>
+        <div id="admin-controls" style="display: none;"></div>
+    </div>
+    <div id="reviews">
+        <h2>Edit Reviews</h2>
+        <div id="reviews-list"></div>
+    </div>
+    <div id="overlay">
+        <div id="overlay-content">
+            <h3>Edit Account</h3>
+            <input type="text" id="edit-username" placeholder="Username">
+            <input type="email" id="edit-email" placeholder="Email">
+            <input type="password" id="edit-password" placeholder="Password">
+            <button id="save-changes-button">Save Changes</button>
+            <button id="cancel-button">Cancel</button>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+    <script src="../client/scripts/profile.js"></script>
+    <script src="../client/scripts/headerFooter.js"></script>
+</body>
+</html>
